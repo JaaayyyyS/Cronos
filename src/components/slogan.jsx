@@ -3,10 +3,14 @@ import React from 'react'
 
 export default function Slogan() {
   return (
-    <ImageBackground source={require('../../assets/image/slogan-bg.png')}
-    className="mt-7 h-56 justify-center rounded-tl-xl rounded-tr-3xl rounded-bl-3xl rounded-br-3xl">
-        <View className="flex-col justify-center ml-7">
-            <Image className="h-8 w-24"
+    <ImageBackground imageStyle={{
+        borderRadius: 40,
+        borderTopLeftRadius: 10,
+    }}
+    resizeMode='cover' source={require('../../assets/image/slogan-bg.png')}
+    className="mt-7 h-72 justify-center">
+        <View className="flex-col justify-center ml-10">
+            <Image className="h-10 w-32 mb-3"
             source={require('../../assets/image/cronos-logo.png')}
             />
             <View>

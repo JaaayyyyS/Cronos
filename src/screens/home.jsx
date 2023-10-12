@@ -1,12 +1,14 @@
-import { View, Text, SafeAreaView, Image, ImageBackground, TouchableOpacity, ScrollView } from "react-native";
+import { View, ScrollView, Text, Image } from "react-native";
 import { StatusBar } from "expo-status-bar";
 
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 
 import Header from "../components/header";
 import Slogan from "../components/slogan";
+import CronosSection from "../components/cronos-section";
+import HomeNode from "../components/homenode";
 
-export default function HomeScreen() {
+export default function HomeScreen({ navigation }) {
     const insets = useSafeAreaInsets()
 
     return(
@@ -23,10 +25,15 @@ export default function HomeScreen() {
         }}
         >
             {/* Scroll Container */}
-            <ScrollView className="p-8">
-                <Header/>
-                <Slogan/>
+            <ScrollView>
+                <View className="p-5">
+                    <Header/>
+                    <Slogan/>
+                    <CronosSection/>
+                </View>
             </ScrollView>
+
+            <HomeNode navigation={navigation}/>
         </View>
         </>
     )

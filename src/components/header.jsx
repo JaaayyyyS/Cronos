@@ -1,4 +1,4 @@
-import { View, Text, Image } from 'react-native'
+import { View, Text, Image, TouchableOpacity } from 'react-native'
 import React from 'react'
 
 export default function Header() {
@@ -13,8 +13,10 @@ export default function Header() {
                 <Text className="text-white text-2xl">Isabelle!</Text>
             </View>
         </View>
-        <Image className="h-14 w-14"
-        source={require('../../assets/icons/options-burguer.png')}/>
+        <TouchableOpacity>
+          <Image className="h-14 w-14"
+          source={require('../../assets/icons/options-burguer.png')}/>
+        </TouchableOpacity>
     </View>
     
     <Image className="h-10 w-12 ml-12"
