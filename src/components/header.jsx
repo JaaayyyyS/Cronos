@@ -8,7 +8,7 @@ export default function Header() {
         <View className="flex-row">
             <Image className="h-16 w-16"
             source={require('../../assets/image/profile-picture.png')}/>
-            <View className="flex-col ml-4">
+            <View className="flex-col ml-4 justify-center">
                 <Text className="text-white text-2xl">Olá,</Text>
                 <Text className="text-white text-2xl">Isabelle!</Text>
             </View>

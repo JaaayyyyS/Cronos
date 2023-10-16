@@ -8,12 +8,14 @@ export default function HomeNode({ navigation }) {
             <TouchableOpacity
             onPress={() => navigation.navigate('calendar')}
             >
-              <Image className="h-24 w-24"
+              <Image className="h-20 w-20"
               source={require('../../assets/icons/calendar-button.png')}/>
             </TouchableOpacity>
             
-            <TouchableOpacity>
-              <Image className="h-24 w-24"
+            <TouchableOpacity
+            onPress={() => navigation.navigate('add-cronos')}
+            >
+              <Image className="h-20 w-20"
               source={require('../../assets/icons/add-button.png')}/>
             </TouchableOpacity>
         </View>

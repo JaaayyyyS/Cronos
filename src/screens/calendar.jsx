@@ -3,10 +3,10 @@ import { StatusBar } from "expo-status-bar";
 import React from 'react'
 
 import { useSafeAreaInsets } from 'react-native-safe-area-context'
-import Header from '../components/header';
 import CalendarSection from '../components/calendar-section';
+import HeaderCalendar from '../components/headercalendar';
 
-export default function CalendarScreen() {
+export default function CalendarScreen({ navigation }) {
   const insets = useSafeAreaInsets()
   
   return (
@@ -23,7 +23,7 @@ export default function CalendarScreen() {
         }}
         >
           <View className="p-5">
-            <Header/>
+            <HeaderCalendar navigation={navigation}/>
             <ScrollView>
               <CalendarSection/>
             </ScrollView>

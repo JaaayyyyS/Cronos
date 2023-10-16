@@ -28,7 +28,7 @@ export default function HomeScreen({ navigation }) {
             <ScrollView>
                 <View className="p-5">
                     <Header/>
-                    <Slogan/>
+                    <Slogan navigation={navigation}/>
                     <CronosSection/>
                 </View>
             </ScrollView>
